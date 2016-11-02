@@ -1,12 +1,12 @@
 #Node Bot With Twitter Api
 
 Today we Create Twitter Bot that teach you have to use Twitter Rest Api to create amazing apps with it. ok so lets get started with creating new folder open up your terminal and type
-
+```
 mkdir myapp
 cd myapp
 npm init
 npm install twit --save-dev
-
+```
 This commands create your project folder then go to that folder then make package.json file which is necessary for installing modules in npm next we actually install our twit package which handle all the complected task for us. if you want to learn more go to this url which leads you to the github page of the package.
 
 Ok now you all set to hit the twitter api but before that to query your data in any api need authentication as you see before in my WordPress Api post things like OAuth1 or cookie based authentication in our app we also need authentication so lets get that credentials first go to https://apps.twitter.com/ this will show all your apps. ok cool now click on create new app
@@ -24,6 +24,7 @@ if someone still this information he can do anything with your twitter account.
 
 Ex.posting unrelated content to your twitter account in that case delete the app this will make you safe.create your index.js file in the root folder and type this code
 
+```
 var Twit = require('twit');
 var config = require('./config');
 var T = new Twit(config);
@@ -44,9 +45,9 @@ var parameter = {
 		};
 	}
 }
-
+```
 In first line i add the module called twit next i make new file called config.js.
-
+```
 module.exports = {
 
 consumer_key: '...',
@@ -55,7 +56,7 @@ access_token: '...',
 access_token_secret: '...',
 
 }
-
+```
 And fill your credentials in to that empty lines and save this file as config.js then we add this file in to our app next i just create new object from twit package. next code is simple
 
 In the documentation of twit package developer write his code in just one line i kind of break this into more readable form so what i did was create a new object with some parameters in this simple example i just search for tweets so i write parameters like q: it means query and count means how many tweets i want so i want 10 tweets with #AkshayKanya hash tag simple
