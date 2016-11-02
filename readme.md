@@ -65,4 +65,4 @@ In next line of code just assemble the call T.get(‘search/tweets’, parameter
 
 And your done that was simple tutorial i ever find. if you still don’t understand how this is helping you in any way then go to this github repo download your the code and do npm install and paste your twitter app credentials and have fun and final thing you can run your app in terminal with this command
 
-```node app.js```
+```node app.js```😃
