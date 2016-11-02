@@ -1,4 +1,4 @@
-#Node Bot With Twitter Api
+#Node Bot With Twitter Api 🤒 🤓 😆 
 
 Today we Create Twitter Bot that teach you have to use Twitter Rest Api to create amazing apps with it. ok so lets get started with creating new folder open up your terminal and type
 ```
